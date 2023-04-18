@@ -44,22 +44,20 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <!-- <li><a href="#services">Services</a></li> -->
+          <li><a href="#visi">About Us</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Struktur</a></li>          
-          <li><a href="#contact">Contact</a></li>
-          <li class="menu-has-children"><a href="./slide/slider/slideshow.html">Dashboard Slide Show</a>
+          <li><a href="#footer">Contact Us</a></li>
+          <li class="menu-has-children"><a href="./slideshow.html">Dashboard Slide Show</a>
             <ul>
               <li><a href="./visimisi.html">Visi & Misi PT.KAI</a></li>
               <li><a href="./strukturorganisasi.html">Struktur Organisasi</a></li>
               <li><a href="./dataasetkpjr.html">Jumlah Aset KPJR</a></li>
-              <li><a href="">Pro Real Perawatan KPJR</a></li>
-              <li><a href="">Safety Induction</a></li>
-              <li><a href="">Layout Balai Yasa</a></li>
+              <li><a href="./proreal.html">Pro Real Perawatan KPJR</a></li>
+              <li><a href="./safetyinduction.html">Safety Induction</a></li>
+              <!-- <li><a href="">Layout Balai Yasa</a></li> -->
               <li><a href="./k3l.html">K3L</a></li>
               <li><a href="./sop.html">SOP Perawatan KPJR</a></li>
-              <li><a href="">Achievement</a></li>
+              <li><a href="./achivment.html">Achievement</a></li>
               <!-- <li><a href="#">Uji Petik</a></li> -->
             </ul>
           </li>
@@ -79,10 +77,11 @@
 
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <div class="carousel-background"><img src="img/header.png" alt="">
+            <div class="carousel-background" id="image"><img src="img/header.png" alt="">
             </div>
             <div class="carousel_caption">
             <h2 class="carousel_title">Balai Yasa Mekanik Cirebon Prujakan</h2>
+            <p>Adaptif, Solutif, Kolaboratif untuk Indonesia</p>
             </div>
           </div>
         </div>
@@ -97,15 +96,18 @@
     ============================-->
     <section id="about">
       <div class="container">
-
-        <header class="section-header">
-          <h3>VISI</h3>
+        <header class="section-header">          
+          <h3 id="visi">VISI</h3>
           <p>Menyediakan KPJR yang SO dan handal.</p>
           <h3>MISI</h3>
           <p>Melakukan perawatan dan perbaikan dengan mengutamakan keselamatan, serta keamanan kerja yang tepat waktu dan mutu yang baik.</p>
           <h3>KEBIJAKAN MUTU</h3>
           <p>Menjadi penyedia jasa perawat dan perbaikan KPJR yang handal dan bermutu tinggi untuk mencapai kepuasan pelanggan. Serta meningkatkan kualitas perawatan dan perbaikan KPJR yang berkesinambungan dengan mengutamakan keselamatan dan keamanan kerja.</p>
           <h3>SEJARAH</h3>
+              <!-- <div class="img">
+                <center><img src="./img/header.jpg" alt=""><br></center>
+              </div> -->
+          <!-- <img src="./img/header.jpg" alt="" width="50%" height="100%"><br><br><br> -->
           <p>Tahun 1980, PJKA Kantor Pusat Bandung menerima tenaga baru lulusan setingkat SLTA sebanyak + 20 orang untuk tenaga pengelasan jalan rel dan dipersiapkan untuk menjadi tenaga operator mesin perawat jalan rel (MPJR) di unit Jalan dan Bangunan.<br><br>
             Tahun 1984, mulai datang MPJR berupa MTT 3 (tiga) unit dan PBR 1 (satu) unit. Sejalan dengan datangnya mesin berat perawat jalan rel tersebut, nama unit kerjanya adalah DKM yang di Kantor Pusat Bandung dan dipimpin oleh Bapak Nurpantoro.<br><br>
             Awal tahun 1990-an karena kebingungan atau ada pihak management yang tidak tertarik dengan mekanisasi, akhirnya dijadikan satu dengan Balai Yasa Jembatan (JKBM).<br><br>
@@ -361,44 +363,6 @@
     <!--==========================
       Contact Section
     ============================-->
-    <section id="contact" class="section-bg wow fadeInUp">
-      <div class="container">
-
-        <div class="section-header">
-          <h3>Contact Us</h3>
-          <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
-        </div>
-
-        <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-        </div>
-
-      </div>
-    </section><!-- #contact -->
-
-  </main>
 
   <!--==========================
     Footer
@@ -426,14 +390,13 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              <strong>Phone:</strong> (+62 812-6247-2504)<br>
               <strong>Email:</strong> bymekanik.cnp@gmail.com<br>
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> -->
+              <a href="https://www.instagram.com/bymekanik.cnp/" class="instagram"><i class="fa fa-instagram"></i></a>
             </div>
 
           </div>
